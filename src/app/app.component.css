@@ -1,0 +1,1084 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: teko;
+    src: url(../assets/font/teko.ttf);
+}
+@font-face {
+    font-family: rubik;
+    src: url(../assets/font/rubik.ttf);
+}
+@font-face {
+    font-family: zila;
+    src: url(../assets/font/zila.ttf);
+}
+@font-face{
+    src: url(../assets/font/roboto.ttf);
+    font-family: roboto;
+}
+@font-face {
+    font-family: sant;
+    src: url(../assets/font/sant.ttf);
+}
+.container{
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+.webpage-background {
+    position:relative;
+    width: 100%;
+    height:650px;
+}
+#back {
+    background-image: url(../assets/image/back-cover.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.strip {
+    width: 100%;
+    background-color:#F8DE22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    font-family: rubik;
+    font-size: 14px;
+    color: #0079FF;
+}
+.strip p {
+    margin-left: 30px;
+    font-weight: 600;
+}
+.strip span {
+    padding-right: 30px;
+    font-weight: 600;
+}
+.strip i {
+    padding-right: 15px;
+}
+.s-icons {
+    display: inline-block;
+    margin-right: 10px;
+}
+.s-icons i {
+    margin: 0px 10px;
+    margin-bottom: 5px;
+    color: black;
+    border-radius: 100%;
+    padding: 8px;
+}
+.s-icons i:hover {
+    background: #0072b1 ;
+}
+.s-icons a:first-child:hover i {
+    background:#1877F2;
+}
+.s-icons a:nth-child(3):hover i {
+    background: rgb(240, 44, 197);
+}
+.s-right span{
+    color: black;
+}
+.s-icons a img {
+    width: 17px;
+    border-radius: 100%;
+    padding: 7px;
+    position: relative;
+    top: 10px;
+}
+.s-icons a img:hover {
+    background: #1DA1F2;
+}
+.header{
+    font-family: teko;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #352F44;
+    justify-content: space-between;
+    animation: header 2s ease-in-out;
+}
+.logo img {
+    width:90px;
+    height: 97px;
+    margin-left:25px;
+    margin-top: 7px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.logo figure figcaption{
+    margin-left:24px;
+    font-size:22px;
+    color:black;
+}
+.menu i {
+    display: none;
+}
+.menu {
+   text-align: center;
+}
+.menu ul li {
+    display: inline-block;
+    margin-right: 35px;
+    font-size:15px;
+    list-style: none;
+    color:white;
+    cursor: pointer;
+    font-family: roboto;
+}
+/*.menu ul li::after{
+    content: '';
+    width:0%;
+    height:2px;
+    background: red;
+    margin: auto;
+    display: block;
+    transition: 0.5s;
+}
+.menu ul li:hover::after{
+    width:100%
+}*/
+.menu ul li a{
+    text-decoration: none;
+    color:white;
+    letter-spacing: 1px;
+}
+.menu ul li a button {
+    font-family: roboto;
+    border:1px solid #F8DE22;
+    border-radius: 4px;
+    padding: 0px 30px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    color:black;
+    font-size: 15px;
+    background-color: #F8DE22;
+    cursor: pointer;
+    font-weight: 600;
+}
+.menu ul li a button:hover {
+    background-color: #0079FF;
+    border: 1px solid #0079FF;
+    color: white;
+}
+.menu ul li a:hover {
+    color: #F8DE22;
+}
+.menu ul li:hover {
+    color: #F8DE22;
+}
+.career {
+    position: relative;
+    padding: 10px;
+}
+.career ul {
+    position: absolute;
+    min-width: 200px;
+    top: 40px;
+    left: 0;
+    background-color: #352F44;
+    border-radius: 7px;
+    display: none;
+    z-index: 2;
+}
+.career ul li {
+    display: block;
+    text-align: left;
+    font-size: 13px;
+    padding: 10px 0px;
+}
+.career ul li a {
+    font-family: roboto;
+    color: white;
+    margin-left: 10px;
+}
+.career ul li a:hover {
+    color:#F8DE22;
+}
+.career:hover.career ul {
+    display: block;
+}
+.merge-part {
+    display: flex;
+    position: absolute;
+    left: -150px;
+    background-color:#352F44 ;
+    border-radius: 7px;
+}
+.merge li {
+    width: 200px;
+    font-size: 7px;
+}
+.bar-details i{
+   margin-right: 30px;
+   font-size: 25px;
+   cursor: pointer;
+   color: white;
+   visibility: hidden;
+}
+.demo {
+    position:absolute;
+    top: 250px;
+}
+.demo img {
+    width: 350px;
+}
+.demo-2 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.demo-2 img {
+    width: 400px;
+}
+.head-content {
+    font-family: roboto;
+    font-size: 46px;
+    text-align: center;
+    color:#321E1E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+    flex-direction: column;
+    font-weight: 300;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+.head-content button {
+    padding: 13px 30px;
+    background-color: #F8DE22;
+    margin: 15px 0px;
+    color: black;
+    font-size: 17px;
+    font-family: rubik;
+    border-radius: 4px;
+    border: 1px solid #F8DE22;
+    cursor: pointer;
+}
+.head-content button:hover {
+    background-color: #0079FF;
+    border: 1px solid #0079FF;
+    color: white;
+}
+.head-image {
+    position: absolute;
+    top:200px;
+    right:150px;
+}
+.head-image img {
+    width:300px;
+}
+.location {
+   position: relative;
+   top: 100px;
+}
+.location img {
+    width: 40px;
+    border: 1px solid #FEFCF3;;
+    border-radius: 100%;
+    padding: 45px;
+    background-color: #FEFCF3;;
+    cursor: pointer;
+}
+.whatsapp img{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+     z-index: 1;
+}
+.hiring-title {
+    width:100%;
+    min-height: 500px;
+    background-color: #FEFCF3;
+    padding-top:30px;
+}
+.hiring-title p:first-child {
+    text-align: center;
+    font-size:38px;
+    font-family: roboto;
+    font-weight: 350;
+    text-shadow: 3px 3px 10px #C0EEF2;
+    padding:30px 0px;
+}
+.hiring {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.box {
+    width:250px;
+    height:250px;
+    border-radius: 7px;
+    border: 1px solid white;
+    text-align: center;
+    background-color: white;
+    box-shadow: 1px 1px 40px 7px #ECF2FF;
+    position: relative;
+    z-index: 0;
+}
+.box img {
+    width: 50px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    position: absolute;
+    left:90px;
+    top: -30px;
+    box-shadow: 1px 1px 10px 4px #DAFFFB;
+    background-color:#DAFFFB;
+    cursor: pointer;
+}
+.box h2 {
+    font-size:15px;
+    font-family: sant;
+    font-weight: 600;
+    color: #040D12;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.box p {
+    font-size: 14px;
+    color: #0B2447;
+    font-family: zila;
+    line-height: 20px;
+    padding: 0px 10px;
+}
+.web-develope {
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px 0px;
+    background-color: #0079FF;
+}
+.web-develope h2 {
+    font-size: 35px;
+    font-family: roboto;
+    font-weight: 400;
+    color: #F8DE22;
+}
+.web-image {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.web-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.web-content p {
+    font-family: roboto;
+    width:600px;
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+    font-weight: 350;
+    background-color: #D5FFE4;
+    box-shadow: 1px 1px 40px 7px #ECF2FF;
+    padding:20px 0px;
+    padding-left: 15px;
+    border-radius: 7px;
+}
+.vertical {
+    width: 100%;
+    padding: 30px 0px;
+    background-color: #F9F5F6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.vertical h2 {
+    font-family: roboto;
+    font-size: 35px;
+    padding-bottom: 20px;
+    font-weight: 400;
+    color: black;
+}
+.vertical-box {
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+}
+.serve-box {
+    width:200px;
+    border: 1px solid;
+    font-family: roboto;
+    display: flex;
+    background-color: white;
+    border: 1px solid #F9FBE7;
+    padding: 15px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    transition: .5s;
+    border-radius: 5px;
+    box-shadow: 1px 1px 25px 3px #DAFFFB;
+}
+.serve-box:hover p{
+    color: white;
+}
+.serve-box:hover {
+    background-color: #05BFDB;
+}
+.vertical .vertical-box:nth-child(3) .serve-box:hover{
+    background-color: #C147E9;
+}
+.vertical .vertical-box:nth-child(4) .serve-box:hover{
+    background-color: #FB2576;
+}
+.vertical .vertical-box:nth-child(5) .serve-box:hover{
+    background-color: #D800A6;
+}
+.serve-box p {
+    font-family: bahnschrift;
+    color: #1D267D;
+}
+.serve-box img {
+    width:50px;
+}
+.domain {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #F8DE22;
+    padding: 25px 0px;
+}
+.domain-content img {
+    width: 200px;
+}
+.domain-content h2 {
+    font-family: roboto;
+    font-size: 35px;
+    font-weight: 350;
+}
+.domain-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    color: black;
+}
+.domain-content p {
+    font-family: roboto;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 15px 0px;
+}
+.redot-insight {
+    width: 100%;
+    display: flex;
+    padding: 30px 0px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 400px;
+}
+.redot-insight h2 {
+    font-family: roboto;
+    font-size: 35px;
+    font-weight: 400;
+    text-shadow: 3px 3px 10px #C0EEF2;
+}
+.insights {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    padding:20px 0px;
+}
+.insight-part {
+    width: 250px;
+    height: 270px;
+    border: 1px solid #CAEDFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: sant;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #EC53B0;
+    box-shadow: 1px 1px 25px 3px #CAEDFF;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+.insight-part:hover {
+    background-color: #D67BFF;
+}
+.insight-part img {
+    width: 230px;
+}
+.insight-part p {
+    font-size: 15px;
+    font-weight: 300px;
+    text-align: center;
+    color: white;
+}
+.insight-part:hover p {
+    text-shadow: 1px 1px 5px #F8DE22;
+}
+.footer-part {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 30px 0px;
+    justify-content: space-evenly;
+    background-color: #0079FF;
+    color: white;
+}
+.footer-part h2 {
+    font-family: roboto;
+    font-size:20px;
+    font-weight: 600;
+    padding-bottom:20px;
+    color: #FFD700;
+    text-decoration: underline;
+}
+.brands {
+    width: 180px;
+    font-family: rubik;
+    margin-left: 35px;
+}
+.brands p a{
+    color: white;
+    text-decoration: none;
+}
+.brands p a:hover {
+    color: #FFD700;
+}
+.brands img {
+    width: 140px;
+    margin-top: 35px;
+}
+.services-part {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-left: 20px;
+}
+.part {
+    width: 180px;
+    margin-bottom: 10px;
+    color: white;
+    cursor: pointer;
+}
+.part p{
+    font-family: sant;
+    font-size: 15px;
+    padding: 5px 0px;
+}
+.part p a {
+    color: white;
+    text-decoration: none;
+}
+.part p a:hover {
+    color: #F8DE22;
+}
+#change {
+    margin-left: 25px;
+}
+.reviews {
+    width:300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.reviews p {
+    font-family: sant;
+    line-height: 29px;
+}
+.reviews button {
+    padding: 12px 20px;
+    margin: 45px 0px 25px 0px;
+    color: black;
+    background-color: #F8DE22;
+    border: 1px solid #F8DE22;
+    font-family: roboto;
+    border-radius: 5px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.reviews button:hover {
+    background-color: #001253;
+    border: 1px solid #001253;
+    color: white;
+}
+.social-icons i {
+    color:white;
+    font-size:21px;
+    padding: 10px;
+    border-radius: 100%;
+    cursor: pointer;
+    margin:10px;
+}
+.social-icons i:hover {
+    background: #0072b1;
+}
+.social-icons a {
+    color: black;
+}
+.social-icons a img {
+    width:25px;
+    position: relative;
+    top:10px;
+    border-radius: 100%;
+    padding: 5px;
+}
+.social-icons img:hover {
+    background:#1DA1F2;
+}
+.social-icons a:first-child:hover i {
+    background:#1877F2;
+}
+.social-icons a:nth-child(3):hover i {
+    background: rgb(240, 44, 197);
+}
+.copywrite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: rubik;
+    border-top:1px solid #ccc;
+}
+.copywrite p {
+    padding: 15px 0px;
+}
+@media(max-width:1100px){
+    .menu ul li {
+        margin-right: 20px;
+    }
+    .demo img{
+        width: 300px;
+    }
+    .demo-2 img {
+        width:350px;
+    }
+    .head-content {
+        font-size: 40px;
+    }
+    .web-image img {
+        width: 500px;
+    }
+    .web-content p {
+       width: 400px;
+       font-size: 15px;
+    }
+    .insights {
+        width: 100%;
+    }
+    .footer-part h2 {
+        font-size: 15px;
+    }
+    .brands p {
+        font-size: 13px;
+    }
+    .part {
+        width: 150px;
+    }
+    .insight-part {
+        width:230px;
+    }
+    .part p {
+        font-size: 13px;
+    }
+    .services-part {
+        width:650px;
+    }
+    .reviews {
+        width: 250px;
+    }
+    .reviews p {
+        font-size: 13px;
+    }
+    .brands img {
+        width: 110px;
+    }
+}
+@media(max-width:800px){
+    .menu ul li {
+        margin-right: 10px;
+        font-size:11px;
+    }
+    .demo-2 img {
+        width:350px;
+    }
+    .menu ul li a button {
+        font-size: 13px;
+    }
+    .demo {
+        position:absolute;
+        top: 300px;
+    }
+    .demo img{
+        width: 300px;
+    }
+    .demo-2 img {
+        width:270px;
+    }
+    .head-content {
+        font-size: 35px;
+        margin-top: 50px;
+    }
+    .location {
+        position: relative;
+        top:80px;
+    }
+    .location img {
+        width: 30px;
+        padding: 30px;
+    }
+    .strip {
+        font-size: 11px;
+    }
+    .strip p {
+        margin-left: 5px;
+    }
+    .strip i {
+        padding-right: 5px;
+    }
+    .box img {
+        position:absolute;
+        left: 100px;
+    }
+    .s-icons i {
+        margin: 0px 5px;
+        margin-bottom: 7px;
+    }
+    .logo img {
+        width: 50px;
+        height: 57px;
+    }
+    .web-image {
+        display: flex;
+        flex-direction: column;
+    }
+    .web-content p {
+        margin-bottom: 15px;
+    }
+    .hiring {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box {
+        width:280px;
+        margin-bottom: 40px;
+    }
+    .domain-image img {
+        width: 400px;
+    }
+    .insights {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .insight-part {
+        width: 300px;
+        height: 300px;
+    }
+    .insight-part p {
+        font-size: 13px;
+    }
+    .footer-part{
+        display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .brands {
+        padding-bottom: 20px;
+    }
+    .services-part {
+        width: 100%;
+       display: flex;
+    }
+}
+@media(max-width:500px){
+    .webpage-background {
+        height: 500px;
+    }
+    .strip {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 8px 0px;
+    }
+    .strip p {
+        display: none;
+    }
+    .s-icons {
+        display: none;
+    }
+    .menu i {
+        display: block;
+        color:white;
+        cursor: pointer;
+        margin: 10px;
+        font-size: 22px;
+    }
+    .bar-details i{
+        visibility: visible;
+    }
+    .menu {
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        z-index: 2;
+        text-align: left;
+        transition: .5s;
+        margin-right: -20px;
+    }
+    .menu ul li {
+        display: block;
+        margin: 15px 0px;
+        margin-left: 10px;
+        font-size: 15px;
+    }
+    .menu ul li a button {
+        font-size: 20px;
+        padding: 5px 30px;
+    }
+    .career ul {
+        position: absolute;
+        min-width: 150px;
+        top: 40px;
+        left: -20px;
+    }
+    .career ul li {
+        font-size: 11px;
+        padding: 5px 0px;
+    }
+    .merge-part {
+    display: flex;
+    position: absolute;
+    left: -100px;
+    background-color:#352F44 ;
+    border-radius: 7px;
+    flex-wrap: wrap;
+    }
+    .merge li {
+        width: 150px;
+    }
+    .career {
+        padding: 0;
+    }
+    .demo {
+        position: absolute;
+        top:90px;
+    }
+    .demo img{
+        width: 140px;
+    }
+    .demo-2 img {
+        width:200px;
+    }
+    .head-content {
+        display: flex;
+        justify-content:start;
+        height: 400px;
+        font-size: 25px;
+        margin-top: 120px;
+    }
+    .location {
+        position: relative;
+        top:100px;
+    }
+    .location img {
+        padding: 20px;
+    }
+    .hiring-title p:first-child {
+        font-size: 30px;
+    }
+    .web-develope h2 {
+        font-size: 25px;
+    }
+    .web-image img{
+        width: 400px;
+    }
+    .web-content p{
+        width: 350px;
+        font-size: 13px;
+        margin: 10px;
+    }
+    .vertical-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .serve-box{
+        margin: 20px 0px;
+        width: 240px;
+    }
+    .domain {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .insights {
+        display: flex;
+        flex-direction:column;
+    }
+    .insight-part {
+        width: 320px;
+    }
+    .footer-part {
+        min-height:700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .footer-part h2{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #change {
+        margin-left: 0px;
+    }
+    .brands {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+    .services-part {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+    }
+    .brands {
+        width: 300px;
+    }
+    .part {
+        width: 300px;
+    }
+    .part p {
+        font-size: 15px;
+    }
+    .copywrite p {
+        font-size: 13px;
+    }
+    .reviews {
+        width: 300px;
+    }
+    .reviews p {
+        font-size: 15px;
+    }
+}
+@media(max-width:380px){
+    .strip span {
+        padding-right: 5px;
+    }
+    .head-content {
+        font-size: 20px;
+    }
+    .location {
+        position: relative;
+        top:100px;
+    }
+    .demo {
+        position: absolute;
+        top:80px;
+        left:80px;
+    }
+    .demo img{
+        width: 140px;
+    }
+    .demo-2 {
+        position:absolute;
+        right: 60px;
+        bottom: 0px;
+    }
+    .whatsapp img {
+        width: 30px;
+    }
+    .hiring-title p:first-child {
+        font-size: 25px;
+    }
+    .web-develope h2 {
+        font-size: 18px;
+    }
+    .web-content p{
+        width: 300px;
+        font-size: 11px;
+        margin: 10px;
+    }
+    .web-image img{
+        width: 350px;
+    }
+    .vertical h2 {
+        font-size: 25px;
+    }
+    .domain-image img {
+        width: 350px;
+    }
+    .domain-content h2 {
+        font-size: 25px;
+    }
+    .domain-content p {
+        font-size: 17px;
+    }
+    .redot-insight h2{
+        font-size: 30px;
+    }
+    .insight-part {
+        width: 280px;
+    }
+    .brands{
+        width: 250px;
+    }
+    .services-part {
+        width: 250px;
+    }
+    .copywrite p {
+        font-size: 11.5px;
+    }
+}
+
+.s1
+			{
+				opacity: 0.4;
+			}
+			.s1:hover
+			{
+				opacity: 0.8;
+			}
+
+.flip
+{
+	position:absolute;
+	transform: perspective(600px) rotateY(0deg);
+	transition: all 2s linear;
+}
+
+.flip:hover
+{
+	transform:perspective(600px) rotateY(180deg);
+}
